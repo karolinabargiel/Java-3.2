@@ -26,7 +26,7 @@ public class Configuration {
     public static HashMap<String, String> getProperties() {
         Properties prop = new Properties();
         HashMap<String, String> map = new HashMap<>();
-        try (InputStream input = new FileInputStream("C:\\Users\\kbargiel_adm\\IdeaProjects\\Java3.2\\src\\main\\java\\data\\data.properties")) {
+        try (InputStream input = new FileInputStream("src/main/java/data/data.properties")) {
             prop.load(input);
         } catch (IOException fxe) {
             System.out.println("Couldn't load properties correctly: " + fxe.getMessage());
